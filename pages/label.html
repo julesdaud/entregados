@@ -7,57 +7,77 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Phudu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Phudu:wght@300&display=swap" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-            <ul class="navbar">
-                <li><a href="../index.html">inicio</a></li>
-                <li><a href="../pages/catalogo.html">catalogo</a></li>
-                <li><a href="../pages/label.html">label</a></li>
-                <li><a href="../pages/nosotros.html">nosotros</a></li>
-                <li><a href="../pages/contacto.html">contacto</a></li>
-            </ul> 
-    </header>
-    <main>
-        <section class="fatcat-label"><img src="../assets/img/Fatcat.jpeg" alt="">
-            <p>“..mas de 40 anos de experiencia compartiendo la musica en sus mejores formatos..”</p>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-black ">
+            <div class="container-fluid d-flex flex-sm-row flex-md-row justify-contente-evenly d-flex gap-1 gap-md-3 gap-lg-3 m-2">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><li><a  class="text-white display-5" href="../index.html">inicio</a></li></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><li><a  class="text-white display-5" href="../pages/catalogo.html">catalogo</a></li></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><li><a  class="text-white display-5" href="../pages/label.html">label</a></li></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><li><a  class="text-white display-5" href="../pages/nosotros.html">nosotros</a></li></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><li><a  class="text-white display-5" href="../pages/contacto.html">contacto</a></li></a>
+              </li>
+    </header>         
+    <main class="containter row">
+        <section class="col-12 col-sm-12"><img class="img-fluid" src="../assets/img/Fatcat.jpeg" alt="">
+            <p class="d-none d-sm-flex d-md-flex  d-lg-block">“..mas de 40 anos de experiencia compartiendo la musica en sus mejores formatos..”</p>
         </section>
-        <section class="texto-label">
-            <p>Ademas de nuestra tienda de vinilos, cd’s y libros tambien nos dedicamos a acompañar artistas entre buenos aires y new york  desde nuestro sello discografico independiente.</p>
+        <section class="col-12">
+            <p class="d-none d-sm-flex d-md-flex  d-lg-block">Ademas de nuestra tienda de vinilos, cd’s y libros tambien nos dedicamos a acompañar artistas entre buenos aires y new york  desde nuestro sello discografico independiente.</p>
         </section>
-        <section class="playlist-label">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5yt309P1DPlJV35sMUM2t0?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7IsFA8Acy5RLXugEwOVvkk?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>   
+        <section class="d-flex col-sm-6 col-lg-6">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5yt309P1DPlJV35sMUM2t0?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>   
+        </section>
+        <section class="d-flex col-sm-6 col-lg-6">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7IsFA8Acy5RLXugEwOVvkk?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </section>
         <section class="news-teller">
             <h1>new steller de novedades</h1>
             <h2>subscribite</h2>    
-            <input type="email" id="email" pattern=".+@globex\.com" size="30" required />
+            <input type="email" id="email" pattern=".+@globex\.com" size="20" required />
             </section>
-        </main>
-    <footer>
+    </main>
+    <footer class="bg-black -flex">
         <h1>
             14 de Julio 972, 
             1427 Villa Ortuzar, 
             Buenos Aires, Argentina
         </h1>
-        <h2>
+        <h2 class="text-white bg-black ">
             Contactanos
             fatcat.records@gmail.com
             (011) 5445-0287
         </h2>
-        <h3>
+        <h3 class="text-white bg-black">
             <a href="facebook-fixed"><img src="../assets/img/facebook.png" alt="">   </a>
             <a href="instagram-fixed"><img src="../assets/img/instagram.png" alt=""></a>
             <a href="twitter-fixed"><img src="../assets/img/twitter.png" alt=""></a>
             <a href="youtube-fixed"><img src="../assets/img/youtube.png" alt=""></a>
         </h3>
-        <h4>
+        <h4 class="text-white bg-black">
             Horarios:
                 Lunes a Viernes 
                 de 10hs a 18hs
         </h4>
-        </footer>
+    </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
